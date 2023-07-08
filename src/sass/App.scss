@@ -18,3 +18,20 @@
     }
   }
 }
+.success-page {
+  padding: 20px;
+}
+
+//Have to remove, just using for the dark mode
+body {
+  background-color: black;
+  color: #fff;
+}
+.search-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  .form-group {
+    padding: 7px 0px;
+  }
+}

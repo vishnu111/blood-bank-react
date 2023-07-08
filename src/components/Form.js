@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 function Form() {
+  const navigate = useNavigate();
   const [userData, setUserData] = useState({
     user_name: "",
     user_gender: "",
@@ -43,7 +45,11 @@ function Form() {
         user_state,
         user_pin,
       }),
-    });
+    })
+      .then((result) => {
+        navigate("/success");
+      })
+      .catch((err) => console.log(err));
   };
   return (
     <div className="user-info">
@@ -66,14 +72,19 @@ function Form() {
         </div>
         <div className="form-group user-gender">
           <label htmlFor="user_gender">Gender : </label>
-          <input
-            type="text"
+          <select
+            type="submit"
             name="user_gender"
             id="user_gender"
             onChange={handleInputs}
             value={userData.user_gender}
-            placeholder="Gender here"
-          />
+          >
+            <option value="" disabled selected hidden>
+              Select your gender
+            </option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
         </div>
         <div className="form-group user-phone">
           <label htmlFor="user_phone">Phone : </label>
