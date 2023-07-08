@@ -1,0 +1,20 @@
+.user-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  .form-group {
+    max-width: 260px;
+    margin: 0 auto;
+    padding: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+    input,
+    select {
+      height: 25px;
+      border-radius: 2px solid;
+    }
+    select {
+      width: 146px;
+    }
+  }
+}
