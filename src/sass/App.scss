@@ -27,11 +27,81 @@ body {
   background-color: black;
   color: #fff;
 }
-.search-page {
+.search-page,
+.blood-group-search-tile {
   max-width: 600px;
   margin: 0 auto;
   padding: 30px;
   .form-group {
     padding: 7px 0px;
+  }
+}
+.blood-search-page {
+  h3 {
+    padding-top: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+.blood-group-search-tile {
+  padding-bottom: 0px;
+
+  .blood-group-search {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+
+    span {
+      border: 2px solid #fff;
+      padding: 7px;
+      &:hover {
+        background-color: #fff;
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  background-color: lightcoral;
+  div {
+    display: flex;
+    gap: 40px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        color: black;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.blood-group-results {
+  padding-bottom: 30px;
+}
+.main-group-results {
+  border-bottom: 3px solid #fff;
+}
+.blood-group-label.active {
+  background-color: #fff;
+  color: black;
+}
+.user-data {
+  display: flex;
+  justify-content: space-between;
+  span {
+    border-bottom: 0.2px dotted #fff;
+    padding: 5px 0px;
+    flex: 1;
+    flex-basis: 0;
+    text-align: center;
+    &.user-data-name {
+      text-align: left;
+    }
   }
 }
