@@ -33,7 +33,7 @@ function Form() {
       user_pin,
     } = userData;
     console.log(user_blood_group);
-    await fetch("http://localhost:5000/user/user-form", {
+    await fetch("https://blood-bank-node.onrender.com/user/user-form", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({

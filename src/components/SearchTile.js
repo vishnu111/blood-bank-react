@@ -9,7 +9,7 @@ function SearchTile() {
       let bloodGroupClass = e.target.className;
       try {
         const response = await fetch(
-          "http://localhost:5000/user/search-blood-group",
+          "https://blood-bank-node.onrender.com/user/search-blood-group",
           {
             method: "POST",
             headers: { "Content-type": "application/json" },

@@ -15,7 +15,7 @@ function Search() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/user/search-city", {
+      const response = await fetch("https://blood-bank-node.onrender.com/user/search-city", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({ searchCity }),
